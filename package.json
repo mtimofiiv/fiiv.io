@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "beforebuild": "rm -rf ./dist",
-    "build": "parcel build ./src/index.html",
+    "build": "parcel build ./src/index.html --out-dir docs",
     "start": "parcel ./src/index.html"
   },
   "author": "mtimofiiv <git@fiiv.io>",
