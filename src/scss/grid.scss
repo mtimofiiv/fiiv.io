@@ -1,0 +1,44 @@
+.flex {
+  display: flex;
+  width: 100%;
+
+  &.vertical {
+    flex-direction: column;
+    height: 100%;
+
+    &.vcentered {
+      justify-content: center;
+
+      & > * {
+        flex-grow: 0;
+      }
+    }
+  }
+
+  &:not(.vertical) {
+    @media (max-width: 400px) {
+      display: block;
+    }
+  }
+
+  &.no-gutters {
+    justify-content: space-between;
+
+    & > * {
+      margin: 0;
+    }
+  }
+
+  & > * {
+    flex: 1;
+    margin: 1%;
+
+    &.flex { margin: 0 !important; }
+  }
+
+  @media (max-width: 400px) {
+    & > * {
+      margin: 1%;
+    }
+  }
+}

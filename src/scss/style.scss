@@ -1,0 +1,10 @@
+$font-family: 'Nunito', sans-serif;
+$primary: #db5855;
+$base-font-color: #383838;
+$outline:#cecece;
+
+@import '../../node_modules/normalize.css/normalize.css';
+
+@import './base.scss';
+@import './grid.scss';
+@import './layout.scss';

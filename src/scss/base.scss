@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-family;
+  color: $base-font-color;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.625;
+}
+
+a, a:visited {
+  color: $primary;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+  }
+}
+
+section.container {
+  margin-bottom: 150px;
+}

@@ -1,0 +1,44 @@
+.masthead {
+  height: 75vh;
+  background: linear-gradient(lighten($primary, 37%), white);
+
+  .container { height: 100%; }
+
+  .avatar {
+    width: 100%;
+    margin: 0;
+
+    img {
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .2);
+      width: 15%;
+
+      @media (max-width: 768px) {
+        width: 35%;
+      }
+    }
+  }
+}
+
+h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, figure {
+  text-align: center;
+}
+
+.primary-text {
+  color: $primary;
+}
+
+.small {
+  font-size: 75%;
+}
+
+.faded {
+  color: $outline;
+}
+
+.heading {
+  font-weight: bold;
+  text-align: center;
+  font-size: 200%;
+}
