@@ -22,7 +22,7 @@ const Post = ({ uri, title, source, summary, posted_at }) => {
           <span className="font-medium text-lg text-gray-800 title-font leading-none">{day}</span>
         </div>
         <div className="flex-grow pl-6">
-          <h2 className="tracking-widest text-xs title-font font-medium text-violet-500 mb-1">CATEGORY</h2>
+          <h2 className="tracking-widest text-xs title-font font-medium text-violet-500 mb-1">Blog post</h2>
           <h1 className="title-font text-xl font-medium text-gray-900 mb-3">{title}</h1>
           <a className="inline-flex items-center">
             <img alt="blog" src={`https://icon.horse/icon?uri=${uri}`} className="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center" />
