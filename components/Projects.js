@@ -14,7 +14,7 @@ const Projects = ({ projects = [] } = {}) => (
       </div>
       <div className="flex flex-wrap -m-4">
         {projects.map((p, i) => (
-          <a className="xl:w-1/4 md:w-1/2 h-96 block p-4 scale-95 hover:scale-100 transition duration-150 ease-in-out" href={p.uri} key={i}>
+          <a className="xl:w-1/4 md:w-1/2 block p-4 scale-95 hover:scale-100 transition duration-150 ease-in-out" href={p.uri} key={i}>
             <div className="bg-gray-100 p-6 rounded-lg">
               <img className="h-60 rounded w-full object-cover object-center mb-6" src={p.icon} alt={`${p.title} logo`} />
               <h4 className="tracking-widest text-violet-500 text-xs font-medium title-font">{p.subtitle}</h4>
