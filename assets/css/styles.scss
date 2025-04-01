@@ -1,0 +1,103 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@font-face {
+  font-family: 'Epilogue Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/epilogue:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Epilogue Variable', sans-serif;
+  font-weight: 200;
+  line-height: 1.325;
+  font-size: 1em;
+  background-color: #282a36;
+  color: white;
+}
+
+h1 {
+	font-size: 275%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+h2 { font-size: 200%; }
+
+.bold { font-weight: 700; }
+.center { text-align: center; }
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rounded { border-radius: 8px; }
+
+.toptab { height: 10px; }
+
+.gradient {
+	background: rgb(233,143,255);
+	background: -moz-linear-gradient(90deg, rgba(233,143,255,1) 0%, rgba(114,242,255,1) 62%, rgba(217,255,148,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(233,143,255,1) 0%, rgba(114,242,255,1) 62%, rgba(217,255,148,1) 100%);
+	background: linear-gradient(90deg, rgba(233,143,255,1) 0%, rgba(114,242,255,1) 62%, rgba(217,255,148,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e98fff",endColorstr="#d9ff94",GradientType=1);
+}
+
+.section-projects {
+	padding: 0.5em;
+}
+
+.projects-box {
+	background-color: #282a36;
+	padding: 1em;
+}
+
+.projects {
+	width: 100%;
+}
+
+.projects > * {
+	display: block;
+	padding: 10px;
+}
+
+.projects > *:hover {
+	background: #efefef;
+}
+
+.projects > * h3 {
+	text-decoration: none;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+@media (max-width: 1000px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+  .flex {
+  	flex-direction: column;
+  }
+}
