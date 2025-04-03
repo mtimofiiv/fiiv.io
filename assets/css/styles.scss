@@ -27,10 +27,23 @@ body {
   color: white;
 }
 
+.rounded-image {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.bordered-image {
+	border: 5px solid white;
+}
+
 h1 {
 	font-size: 275%;
-	margin-top: 1em;
 	margin-bottom: 1em;
+	margin-top: 0.5em;
 }
 
 h2 { font-size: 200%; }
@@ -51,7 +64,15 @@ h2 { font-size: 200%; }
 
 .rounded { border-radius: 8px; }
 
-.toptab { height: 10px; }
+.centered { margin: 0 auto; }
+
+.toptab {
+	height: 10px;
+}
+
+.facecard {
+	margin-top: 50px;
+}
 
 .gradient {
 	background: rgb(233,143,255);
@@ -95,6 +116,10 @@ footer {
 	.container {
 		width: 90%;
 		margin: 0 auto;
+	}
+
+	.facecard {
+		margin-top: 50px;
 	}
 
   .flex {
