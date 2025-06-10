@@ -1,17 +1,33 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>{{ page.title }}</title>
-    
-    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/lite-youtube-embed.css" />
+
+    <script src="/assets/js/lite-youtube-embed.js"></script>
   </head>
   <body>
+    <div class="toptab gradient"></div>
+    <div class="container">
+      <a href="/" class="wordmark">
+        <img src="/assets/images/me.jpg" />
+        <span>fiiv</span>
+      </a>
+    </div>
+
     {{ content }}
 
+    <footer></footer>
+
     <!-- 100% privacy-first analytics -->
-    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <script
+      async
+      src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
   </body>
 </html>

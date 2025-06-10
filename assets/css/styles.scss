@@ -3,15 +3,6 @@
 # only Main files contain this front matter, not partials.
 ---
 
-/* @font-face {
-  font-family: 'Epilogue Variable';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 100 900;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/epilogue:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-} */
-
 @font-face {
   font-family: "Atkinson Variable";
   font-style: normal;
@@ -35,32 +26,33 @@ body {
   font-family: "Atkinson Variable", sans-serif;
   font-weight: 200;
   line-height: 1.325;
-  font-size: 1em;
+  font-size: 1.2em;
   background-color: #282a36;
   color: white;
-}
-
-.rounded-image {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.bordered-image {
-  border: 5px solid white;
 }
 
 h1 {
   font-size: 275%;
   margin-bottom: 1em;
-  margin-top: 0.5em;
+}
+
+h1 a {
+  color: white;
+}
+
+h1 a::after {
+  content: "↗";
+  font-size: 0.7em;
+  margin-left: 0.5em;
 }
 
 h2 {
   font-size: 200%;
+}
+
+p {
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .bold {
@@ -77,8 +69,21 @@ h2 {
 
 .flex {
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
 }
 
 .rounded {
@@ -89,8 +94,43 @@ h2 {
   margin: 0 auto;
 }
 
+.rounded-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bordered-image {
+  border: 5px solid white;
+}
+
 .toptab {
   height: 10px;
+}
+
+.wordmark {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  display: inline-block;
+}
+
+.wordmark img {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.wordmark span {
+  color: white;
+  font-size: 2em;
+  font-weight: 800;
+  margin-left: 0.3em;
+  position: relative;
+  bottom: 0.2em;
 }
 
 .facecard {
@@ -128,19 +168,9 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-.projects {
+.section-logo {
   width: 100%;
-  list-style-type: none;
-  text-align: center;
-}
-
-.projects > a {
-  flex: 1;
-}
-
-.projects img {
-  width: 5em;
-  height: 5em;
+  border-radius: 12px;
 }
 
 footer {
@@ -149,6 +179,42 @@ footer {
 
 .padded {
   padding: 1em;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.project-status-box {
+  background-color: #1b1c26;
+  padding: 1em;
+  border-radius: 6px;
+}
+
+.project-link {
+  display: block;
+  border-radius: 10px;
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.project-link:hover {
+  background: #1b1c26;
+}
+
+.project-link img {
+  width: 2em;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.project-link span {
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+  margin-left: 15px;
 }
 
 a,
@@ -173,5 +239,9 @@ a:hover {
 
   .flex {
     flex-direction: column;
+  }
+
+  .padded {
+    padding: 0;
   }
 }
