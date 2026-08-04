@@ -1,33 +1,22 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+---
+layout: base
+---
+<header class="container">
+  <div class="wordmark">
+    <span class="title">
+      <a href="/">Nikita Timofiiv</a>
+    </span>
+    <br>
+    <span class="subtitle">Software developer extraordinaire</span>
+  </div>
+</header>
 
-    <title>{{ page.title }}</title>
+<main class="container">
+  {{ content }}
+</main>
 
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link rel="stylesheet" href="/assets/css/lite-youtube-embed.css" />
-
-    <script src="/assets/js/lite-youtube-embed.js"></script>
-  </head>
-  <body>
-    <div class="toptab gradient"></div>
-    <div class="container">
-      <a href="/" class="wordmark">
-        <img src="/assets/images/me.jpg" />
-        <span>fiiv</span>
-      </a>
-    </div>
-
-    {{ content }}
-
-    <footer></footer>
-
-    <!-- 100% privacy-first analytics -->
-    <script
-      async
-      src="https://scripts.simpleanalyticscdn.com/latest.js"
-    ></script>
-  </body>
-</html>
+<footer class="container">
+  <p class="center">
+    Built with <a href="https://jekyllrb.com">Jekyll</a>
+  </p>
+</footer>
