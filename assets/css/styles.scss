@@ -76,6 +76,10 @@ header {
 
 article {
   line-height: 1.625;
+
+  img {
+    max-width: $page--width;
+  }
 }
 
 footer {
@@ -86,7 +90,7 @@ footer {
 
 @media (width >= $page--width) {
   .container {
-    width: 960px;
+    width: $page--width;
   }
 }
 
