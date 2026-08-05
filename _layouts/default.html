@@ -5,6 +5,9 @@ layout: base
   <div class="wordmark">
     <span class="title">
       <a href="/">{{ site.title }}</a>
+      {% if layout.section_label %}
+        <a href="{{ layout.section_uri }}" class="breadcrumb">{{ layout.section_label }}</a>
+      {% endif %}
     </span>
   </div>
 </header>
@@ -15,6 +18,8 @@ layout: base
 
 <footer class="container">
   <p class="center">
-    
+    <a href="/" class="face">
+      <img src="/assets/images/me.jpg">
+    </a>
   </p>
 </footer>

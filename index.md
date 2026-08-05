@@ -8,3 +8,5 @@ title: Nikita Timofiiv
 Software developer: **Ruby**, **Javascript**, **Zig**
 
 Currently working on: **[KeenTeam](https://keenteam.app)**
+
+[Read my blog](/blog)
