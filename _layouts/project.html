@@ -1,0 +1,26 @@
+---
+layout: default
+section_label: projects
+section_uri: /projects/
+---
+
+<article>
+  <div class="logo-masthead" style="background-image: url('{{ page.logo }}');"></div>
+
+  <h1>{{page.title}}</h1>
+
+  <p>
+    <span>Status:</span>
+
+    {% if page.status == 'active' %}
+      <a href="{{ page.project_url }}?ref=fiiv_io" class="status active">active</a>
+    {% elsif page.status == 'sold' %}
+      <a href="{{ page.project_url }}?ref=fiiv_io" class="status sold">sold</a>
+    {% elsif page.status == 'closed' %}
+      <span class="status closed">closed</span>
+    {% endif %}
+  </p>
+
+  {{content}}
+</article>
+

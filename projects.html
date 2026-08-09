@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<h1>Projects</h1>
+
+<ul class="projectroll">
+  {% for project in site.projects %}
+    <li>
+      <h2>
+        <a href="{{ project.url }}">
+        <img src="{{ project.logo }}">
+          <span>{{ project.name }}</span>
+        </a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>

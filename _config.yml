@@ -12,3 +12,8 @@ plugins:
 
 sass:
   style: compressed
+
+collections:
+  projects:
+    output: true
+
