@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reflections on selling my business
-description: Wow.
+description: What it felt like to sell my business.
 ---
 
 In 2021, I launched a fun little project: [Icon.horse](https://icon.horse).
