@@ -2,6 +2,8 @@ title: Nikita Timofiiv
 email: hi@fiiv.io
 description: >-
   Web professional with 16 years of experience.
+tagline: Developer · Product designer · Consultant
+avatar: /assets/images/me.jpg
 baseurl: ""
 url: "https://fiiv.io"
 permalink: /blog/:title
@@ -17,3 +19,25 @@ collections:
   projects:
     output: true
 
+
+# Top navigation. `url` must match the page's permalink for the active state.
+nav:
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Blog
+    url: /blog/
+  - title: Now
+    url: /now/
+
+# Footer links. Add as many as you like.
+social:
+  - title: Email
+    url: mailto:hi@fiiv.io
+  # - title: GitHub
+  #   url: https://github.com/your-handle
+  # - title: LinkedIn
+  #   url: https://www.linkedin.com/in/your-handle
+  - title: RSS
+    url: /feed.xml

@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="wordmark">{{ site.title }}</a>
+
+    <nav aria-label="Main">
+      <ul>
+        {% for item in site.nav %}
+          {% assign current = false %}
+          {% if page.url == item.url %}
+            {% assign current = true %}
+          {% elsif item.url == '/blog/' and page.collection == 'posts' %}
+            {% assign current = true %}
+          {% elsif item.url == '/projects/' and page.collection == 'projects' %}
+            {% assign current = true %}
+          {% endif %}
+          <li><a href="{{ item.url }}"{% if current %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <a href="mailto:{{ site.email }}" class="button small header-cta">Get in touch</a>
+  </div>
+</header>

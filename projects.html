@@ -1,18 +1,11 @@
 ---
 layout: default
+title: Projects
+permalink: /projects/
 ---
 
-<h1>Projects</h1>
+<h1 class="page-title">Projects</h1>
+<p class="page-lede">Products I've designed, built and run &mdash; some still going, some sold, some retired.</p>
 
-<ul class="projectroll">
-  {% for project in site.projects %}
-    <li>
-      <h2>
-        <a href="{{ project.url }}">
-        <img src="{{ project.logo }}">
-          <span>{{ project.name }}</span>
-        </a>
-      </h2>
-    </li>
-  {% endfor %}
-</ul>
+{% assign projects = site.projects | sort: 'order' %}
+{% include project-cards.html projects=projects %}

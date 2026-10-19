@@ -1,0 +1,15 @@
+{% comment %}Usage: {% include project-cards.html projects=site.projects %}{% endcomment %}
+<ul class="card-grid">
+  {% for project in include.projects %}
+    <li class="card">
+      <div class="card-head">
+        <img src="{{ project.logo }}" alt="" class="card-logo">
+        <div>
+          <h3><a href="{{ project.url }}" class="card-link">{{ project.name }}</a></h3>
+          {% if project.status %}<span class="status {{ project.status }}">{{ project.status }}</span>{% endif %}
+        </div>
+      </div>
+      <p>{{ project.summary | default: project.excerpt | strip_html | truncatewords: 28 }}</p>
+    </li>
+  {% endfor %}
+</ul>

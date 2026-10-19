@@ -1,0 +1,18 @@
+{% comment %}Usage: {% include post-feed.html posts=site.posts descriptions=true %}{% endcomment %}
+<ul class="feed">
+  {% for post in include.posts %}
+    {% assign minutes = post.content | number_of_words | divided_by: 220 | at_least: 1 %}
+    <li>
+      <a href="{{ post.url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %Y' }}</time>
+        <span class="feed-body">
+          <span class="feed-title">{{ post.title }}</span>
+          {% if include.descriptions and post.description %}
+            <span class="feed-description">{{ post.description }}</span>
+          {% endif %}
+        </span>
+        <span class="feed-meta">{{ minutes }} min read<span class="feed-arrow" aria-hidden="true">&rarr;</span></span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,4 +1,5 @@
 ---
+order: 3
 name: 30 Wears
 logo: /assets/images/30wears.jpg
 layout: project

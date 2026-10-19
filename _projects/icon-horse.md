@@ -1,4 +1,5 @@
 ---
+order: 2
 name: Icon Horse
 logo: /assets/images/iconhorse.png
 status: sold

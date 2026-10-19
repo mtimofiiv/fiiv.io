@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="container">
+    <a href="/" class="face">
+      <img src="{{ site.avatar }}" alt="">
+      <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</span>
+    </a>
+
+    <ul>
+      {% for link in site.social %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</footer>
