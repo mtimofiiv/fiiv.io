@@ -4,6 +4,12 @@ description: >-
   Web professional with 16 years of experience.
 tagline: Developer · Product designer · Consultant
 avatar: /assets/images/me.jpg
+author:
+  name: Nikita Timofiiv
+  url: https://fiiv.io/
+twitter:
+  username: mtimofiiv
+  card: summary
 baseurl: ""
 url: "https://fiiv.io"
 permalink: /blog/:title
@@ -19,8 +25,14 @@ collections:
   projects:
     output: true
 
+defaults:
+  - scope:
+      type: projects
+    values:
+      seo:
+        type: WebPage
 
-# Top navigation. `url` must match the page's permalink for the active state.
+
 nav:
   - title: About
     url: /about/
@@ -30,8 +42,9 @@ nav:
     url: /blog/
   - title: Now
     url: /now/
+  - title: CV
+    url: /cv/
 
-# Ways to reach you, shown on /contact/ and in the footer.
 contact:
   - title: Email
     handle: hi@fiiv.io

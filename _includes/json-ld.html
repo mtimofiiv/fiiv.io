@@ -1,0 +1,35 @@
+{% assign person_id = site.url | append: '/#person' %}
+{% assign skills = '' | split: '' %}
+{% for group in site.data.cv.skills %}{% assign skills = skills | concat: group.items %}{% endfor %}
+{% assign same_as = '' | split: '' %}
+{% for link in site.contact %}{% unless link.url contains 'mailto:' %}{% assign same_as = same_as | push: link.url %}{% endunless %}{% endfor %}
+{% capture person %}{
+  "@type": "Person",
+  "@id": {{ person_id | jsonify }},
+  "name": {{ site.title | jsonify }},
+  "url": {{ site.url | append: '/' | jsonify }},
+  "image": {{ site.avatar | absolute_url | jsonify }},
+  "email": {{ site.email | prepend: 'mailto:' | jsonify }},
+  "jobTitle": {{ site.tagline | jsonify }},
+  "description": {{ site.data.cv.summary | jsonify }},
+  "knowsAbout": {{ skills | jsonify }},
+  "sameAs": {{ same_as | jsonify }}
+}{% endcapture %}
+{% if page.url == '/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [{{ person }}]
+}
+</script>
+{% elsif page.url == '/about/' or page.url == '/cv/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": {{ page.url | absolute_url | jsonify }},
+  "name": {{ page.title | append: ' – ' | append: site.title | jsonify }},
+  "mainEntity": {{ person }}
+}
+</script>
+{% endif %}

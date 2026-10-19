@@ -1,4 +1,3 @@
-{% comment %}Usage: {% include post-feed.html posts=site.posts descriptions=true %}{% endcomment %}
 <ul class="feed">
   {% for post in include.posts %}
     {% assign minutes = post.content | number_of_words | divided_by: 220 | at_least: 1 %}

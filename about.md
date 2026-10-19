@@ -5,8 +5,6 @@ permalink: /about/
 lede: Developer, product designer and consultant.
 ---
 
-<!-- Placeholder copy: replace with your own. -->
-
 Hello, I'm Nikita. I've been building for the web for 16 years.
 
 ## What I can do for you

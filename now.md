@@ -5,8 +5,6 @@ permalink: /now/
 updated: 2026-10-19
 ---
 
-<!-- Placeholder copy: replace with your own. -->
-
 Here's what I'm up to right now:
 
 - Building [KeenTeam](https://keenteam.app).

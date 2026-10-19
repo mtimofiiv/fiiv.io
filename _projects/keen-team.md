@@ -1,5 +1,6 @@
 ---
 order: 1
+title: KeenTeam
 name: KeenTeam
 logo: /assets/images/keenteam.png
 layout: project

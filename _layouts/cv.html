@@ -1,0 +1,94 @@
+---
+layout: default
+---
+{% assign cv = site.data.cv %}
+<article class="cv">
+  <header class="cv-header">
+    <img src="{{ site.avatar }}" alt="" class="cv-avatar">
+    <div>
+      <h1>{{ site.title }}</h1>
+      <p class="cv-headline">{{ cv.headline }}</p>
+      <p class="cv-location">{{ cv.location }}</p>
+    </div>
+  </header>
+
+  <div class="cv-summary">{{ cv.summary | markdownify }}</div>
+
+  <div class="cv-actions">
+    {% for link in site.contact %}
+      <a href="{{ link.url }}" class="cv-contact">{{ link.handle }}</a>
+    {% endfor %}
+    <button type="button" class="button secondary small" onclick="window.print()">Print / save as PDF</button>
+  </div>
+
+  <section class="cv-section">
+    <h2>About</h2>
+    <div>
+      {% for paragraph in cv.about %}{{ paragraph | markdownify }}{% endfor %}
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <h2>Skills</h2>
+    <dl class="cv-skills">
+      {% for skill in cv.skills %}
+        <dt>{{ skill.group }}</dt>
+        <dd>{{ skill.items | join: ', ' }}</dd>
+      {% endfor %}
+    </dl>
+  </section>
+
+  <section class="cv-section">
+    <h2>Experience</h2>
+    <div>
+      {% for job in cv.experience %}
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <h3>{% if job.url %}<a href="{{ job.url }}">{{ job.org }}</a>{% else %}{{ job.org }}{% endif %}</h3>
+            <span class="cv-dates">{{ job.dates }}</span>
+          </div>
+          <div class="cv-entry-description">{{ job.description | markdownify }}</div>
+          <ul class="cv-roles">
+            {% for role in job.roles %}
+              <li><strong>{{ role.title }}</strong> &ndash; {{ role.description }}</li>
+            {% endfor %}
+          </ul>
+          {% include cv-tech.html tech=job.tech %}
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="cv-section" id="projects">
+    <h2>Freelance &amp; personal projects</h2>
+    <div>
+      {% for project in cv.projects %}
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <h3>
+              {% if project.url %}<a href="{{ project.url }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}
+              {% if project.client %}<span class="cv-client">for {{ project.client }}</span>{% endif %}
+            </h3>
+            <span class="cv-dates">{{ project.status | default: project.duration }}</span>
+          </div>
+          <div class="cv-entry-description">{{ project.description | markdownify }}</div>
+          {% include cv-tech.html tech=project.tech %}
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <h2>Teaching</h2>
+    <div>
+      {% for item in cv.teaching %}
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <h3>{% if item.url %}<a href="{{ item.url }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}</h3>
+          </div>
+          <div class="cv-entry-description">{{ item.description | markdownify }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+</article>

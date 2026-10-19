@@ -1,0 +1,152 @@
+headline: Multi-disciplined developer
+location: Bangkok, Thailand · working remotely
+
+summary: >-
+  I've been working in web and mobile development for over 16 years. I would
+  love to help you with whatever challenge you've got.
+
+about:
+  - >-
+    I'm a developer/engineer working mostly on web and mobile projects. I'm
+    currently based in Bangkok, Thailand, but most of my work is remote.
+  - >-
+    Currently, I am working with several freelance clients to build and
+    maintain their applications. Additionally, I love building my own apps for
+    things that align with my interests and ethics. My preferred stack is
+    Ruby/Ruby on Rails, but I've also got a lot of JavaScript/Node.js work
+    under my belt.
+  - >-
+    Outside of work I'm passionate about fitness (running, muay thai), making
+    video documentaries on YouTube and
+    [slow-travelling the world](https://www.thebrokebackpacker.com/slow-travel/).
+
+skills:
+  - group: Languages
+    items: [Ruby, JavaScript, Zig, PHP]
+  - group: Frameworks
+    items: [Ruby on Rails, Stimulus, Node.js, Express.js, React, React Native, Next.js, Vue.js, Ember.js]
+  - group: Data
+    items: [PostgreSQL, SQLite, Redis, MongoDB, MySQL]
+  - group: Ops
+    items: [Docker, Kamal]
+
+experience:
+  - org: Freelance & independent products
+    dates: 2018 – Present
+    description: >-
+      Working with clients on web and mobile applications, alongside building
+      and running my own products. See [projects](#projects) below for
+      highlights.
+    roles:
+      - title: Freelance Developer & Consultant
+        description: Designing, building and maintaining web and mobile applications for clients, from first prototype to production.
+      - title: Founder
+        description: Built and ran my own products, including Icon Horse (sold) and KeenTeam.
+    tech: [Ruby on Rails, Node.js, React, React Native, Vue.js, PostgreSQL, Redis, SQLite, Docker]
+
+  - org: Member Get Member Company
+    url: https://membergetmember.co
+    dates: September 2014 – 2018
+    description: >-
+      A small startup in the heart of Amsterdam, MGMCo's product is a referral
+      marketing platform.
+    roles:
+      - title: Product Manager
+        description: In charge of designing a product for a previously unexplored ecommerce market.
+      - title: Tech Lead
+        description: Setting the technical vision for the company.
+      - title: Backend Developer
+        description: Building and maintaining the various Node.js APIs and microservices used by the company.
+    tech: [Ruby on Rails, PostgreSQL, Ember.js, Redis, Node.js, MongoDB, Express.js, React]
+
+  - org: Canucks Sports & Entertainment
+    url: https://canucks.com
+    dates: February 2011 – July 2014
+    description: >-
+      The Vancouver Canucks are a premier professional sports (ice hockey)
+      franchise in Vancouver, part of the National Hockey League.
+    roles:
+      - title: Full Stack Developer
+        description: Ran campaigns and managed the entire web presence for the team from the technical side.
+    tech: [PHP, MySQL, Ruby, Sinatra, Backbone.js]
+
+  - org: Noomii
+    url: https://noomii.com
+    dates: November 2010 – February 2011
+    description: >-
+      Noomii is a startup in Vancouver, Canada focusing on matching life
+      coaches with clients.
+    roles:
+      - title: Designer + Frontend Developer
+        description: Designed and implemented the brand and look and feel of the product's website.
+    tech: [Ruby on Rails, JavaScript]
+
+projects:
+  - name: KeenTeam
+    url: https://keenteam.app?ref=fiiv_io
+    status: Active
+    description: >-
+      An all-in-one sports administration tool for youth sports teams, camps
+      and tournaments.
+    tech: [Ruby on Rails, SQLite, Docker]
+
+  - name: Icon Horse
+    url: https://icon.horse?ref=fiiv_io
+    status: Sold
+    duration: 2 months work
+    description: >-
+      A web service to get bulletproof favicons for any website, even if it's
+      unreachable or has no icon! This project has been sold to
+      [Third South Capital](https://thirdsouth.capital).
+    tech: [PostgreSQL, Redis, Node.js, React, Next.js, Docker, Tailwind]
+
+  - name: 30 Wears
+    url: /projects/30-wears
+    duration: 2 months work
+    description: >-
+      An app I built for the [Fixathon](https://fixathon.io) centered around the
+      [#30wearschallenge](https://www.instagram.com/explore/tags/30wearschallenge/)
+      – a way to get people to wear their clothes more, reducing waste and
+      over-production in the garment industry.
+    tech: [PostgreSQL, Node.js, React Native, Expo]
+
+  - name: FlexDB
+    client: TNO
+    duration: 3+ months work
+    description: >-
+      TNO uses sensors to detect vehicle emissions during drives (such as
+      CO<sub>2</sub> emissions) as part of the
+      [SEMS project](https://www.tno.nl/en/focus-areas/traffic-transport/roadmaps/sustainable-traffic-and-transport/sustainable-mobility-and-logistics/improving-air-quality-by-monitoring-real-world-emissions/measuring-real-world-emissions-with-tno-s-smart-emissions-measurement-system-sems/).
+      The client needed a flexible system that could gather, store and rapidly
+      index millions of rows of data in real time. The solution I built is now
+      used not just in the SEMS project but in several other sensor-based
+      systems as well (like locomotives).
+    tech: [PostgreSQL, Node.js]
+
+  - name: Bouwlogistiek Dashboard
+    duration: 3 months work
+    description: >-
+      The construction industry in the Netherlands is working to reduce its
+      ecological footprint. This dashboard helps it and municipalities show
+      their progress reducing emissions in real time.
+    tech: [PostgreSQL, Redis, Node.js, Vue.js, Vuex]
+
+  - name: Heineken
+    duration: 2 months work
+    description: >-
+      A mobile (iOS and Android) app that pairs with an "internet of things"
+      device and allows for purchasing and delivery of beer.
+    tech: [React Native, Redux]
+
+teaching:
+  - name: Frameworkless.js
+    url: https://frameworkless.js.org?ref=fiiv_io
+    description: >-
+      I created and taught a Node.js course on live stream, with replays of the
+      lessons available forever. The materials are a little dated these days,
+      but still teach how to build an HTTP server in Node from scratch.
+
+  - name: New York Code & Design Academy
+    description: >-
+      Taught several courses on frontend and backend development on the
+      Amsterdam campus.

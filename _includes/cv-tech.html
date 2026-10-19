@@ -1,0 +1,5 @@
+{% if include.tech %}
+  <ul class="cv-tech">
+    {% for tech in include.tech %}<li>{{ tech }}</li>{% endfor %}
+  </ul>
+{% endif %}
