@@ -6,9 +6,10 @@
     </a>
 
     <ul>
-      {% for link in site.social %}
+      {% for link in site.contact %}
         <li><a href="{{ link.url }}">{{ link.title }}</a></li>
       {% endfor %}
+      <li><a href="/feed.xml">RSS</a></li>
     </ul>
   </div>
 </footer>

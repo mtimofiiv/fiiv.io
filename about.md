@@ -21,4 +21,4 @@ Want the full picture? [Read my CV](/cv/).
 
 ---
 
-Have a project in mind? [Let's talk](mailto:hi@fiiv.io).
+Have a project in mind? [Let's talk](/contact/).

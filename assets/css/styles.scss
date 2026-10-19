@@ -639,6 +639,57 @@ article {
   }
 }
 
+/* ---------- Contact ---------- */
+
+article .contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li + li {
+    margin-top: 0.75rem;
+  }
+
+  a, a:visited {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 1rem;
+    padding: 1.125rem 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    color: var(--color-text);
+    text-decoration: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+      border-color: var(--color-muted);
+      box-shadow: var(--shadow);
+
+      .contact-arrow {
+        transform: translateX(4px);
+        color: var(--color-hilight);
+      }
+    }
+  }
+
+  .contact-title {
+    font-weight: 600;
+    min-width: 7.5em;
+  }
+
+  .contact-handle {
+    flex: 1;
+    font-weight: 400;
+    color: var(--color-muted);
+  }
+
+  .contact-arrow {
+    color: var(--color-faint);
+    transition: transform 0.15s ease, color 0.15s ease;
+  }
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {

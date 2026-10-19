@@ -31,13 +31,14 @@ nav:
   - title: Now
     url: /now/
 
-# Footer links. Add as many as you like.
-social:
+# Ways to reach you, shown on /contact/ and in the footer.
+contact:
   - title: Email
+    handle: hi@fiiv.io
     url: mailto:hi@fiiv.io
-  # - title: GitHub
-  #   url: https://github.com/your-handle
-  # - title: LinkedIn
-  #   url: https://www.linkedin.com/in/your-handle
-  - title: RSS
-    url: /feed.xml
+  - title: X (Twitter)
+    handle: "@mtimofiiv"
+    url: https://x.com/mtimofiiv
+  - title: LinkedIn
+    handle: in/mtimofiiv
+    url: https://www.linkedin.com/in/mtimofiiv/
