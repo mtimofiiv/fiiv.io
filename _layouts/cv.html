@@ -9,6 +9,12 @@ layout: default
       <h1>{{ site.title }}</h1>
       <p class="cv-headline">{{ cv.headline }}</p>
       <p class="cv-location">{{ cv.location }}</p>
+      <p class="cv-print-contact">
+        <span>{{ site.url | remove: 'https://' }}</span>
+        {% for link in site.contact %}
+          <span>{{ link.url | remove: 'mailto:' | remove: 'https://' | remove: 'www.' | split: '?' | first | append: '#' | remove: '/#' | remove: '#' }}</span>
+        {% endfor %}
+      </p>
     </div>
   </header>
 
