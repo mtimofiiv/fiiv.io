@@ -2,7 +2,7 @@
 order: 1
 title: FindATourney
 name: FindATourney
-logo: /assets/images/keenteam.png
+logo: /assets/images/findatourney.png
 layout: project
 project_url: https://findatourney.com
 status: active
